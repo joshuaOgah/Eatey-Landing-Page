@@ -1,0 +1,438 @@
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+}
+
+blockquote {
+  font-style: italic;
+  font-size: 1.3rem;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Lora", serif;
+}
+h1 {
+  font-size: 5rem;
+  line-height: 125%;
+  font-weight: 600;
+  margin-bottom: 2.9rem;
+}
+
+h2 {
+  font-size: 4rem;
+  font-weight: 600;
+  line-height: 125%;
+  margin-bottom: 2.9rem;
+}
+
+h3 {
+  font-size: 2.4rem;
+  font-weight: 500;
+  line-height: 125%;
+  margin-bottom: 2.3rem;
+}
+.container {
+  margin: 0 auto;
+  max-width: 140rem;
+}
+
+.container-inner {
+  margin-top: 12.9rem;
+  width: 30%;
+}
+
+.container-centered {
+  width: 37%;
+  margin: 0 auto;
+}
+
+section {
+  margin-bottom: 6.4rem;
+}
+
+.grid-column {
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.grid {
+  display: grid;
+}
+
+.grid-2-cols {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5rem;
+}
+
+.grid-3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-5-cols {
+  grid-template-columns: 1.2fr 1fr 1fr 1fr 1fr;
+  gap: 4rem;
+}
+
+.hide {
+  display: none;
+}
+
+/****Eatey Hero Section****/
+.nav-bar {
+  display: flex;
+  /* max-width: 140rem; */
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 4rem;
+  font-weight: 600;
+}
+.logo__a {
+  color: #5937b7;
+}
+.main-nav li,
+.sec-nav li {
+  list-style: none;
+  margin-right: 5rem;
+}
+
+.main-nav ul,
+.sec-nav ul {
+  display: flex;
+}
+
+.main-nav a:link,
+.main-nav a:visited,
+.sec-nav a:link,
+.sec-nav a:visited {
+  text-decoration: none;
+  color: #000;
+}
+.hero-section a:link,
+.hero-section a:visited {
+  text-decoration: none;
+  color: #000;
+}
+
+.hero-section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  /* background-color: orangered; */
+  background-image: url("./img/4K.png");
+  background-size: cover;
+}
+
+.hero-body {
+  line-height: 150%;
+  margin-bottom: 3.8rem;
+}
+
+.btn:link,
+.btn:visited {
+  background-color: #000;
+  color: #fff !important;
+  text-decoration: none;
+  padding: 1.4rem 2.4rem;
+  border-radius: 0.6rem;
+  transition: all 0.3s;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: #222;
+}
+.hero-btn:link,
+.hero-btn:visited {
+  display: inline-block;
+}
+
+.hero-btn:hover {
+  transform: translateY(-3px);
+}
+
+.hero-btn:active {
+  transform: translateY(0px);
+}
+
+/* SERVICES SECTION */
+
+.services-section {
+  margin-bottom: 20rem;
+}
+.services-text {
+  text-align: center;
+  margin-bottom: 6.4rem;
+}
+
+.card1Image {
+  width: 100%;
+}
+
+.card-text {
+  width: 72%;
+}
+
+/**** MENU SECTION ****/
+
+.menu-section {
+  margin-bottom: 20rem;
+}
+
+.menu-content {
+  padding: 0 1rem;
+}
+
+.star-icon {
+  color: #f4c285;
+}
+
+.card {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  max-width: 34.7rem;
+  height: 42rem;
+  border-radius: 0.6rem;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.menu-img {
+  max-width: 100%;
+}
+
+/*  TESTIMONIAL SECTION  */
+
+.testimonials-container {
+  position: relative;
+  background-color: #dd8f8d;
+  width: 80%;
+  margin: 0 auto;
+  padding: 3.1rem 5.6rem;
+  border-radius: 0.6rem;
+}
+
+.testimonials-text {
+  width: 48%;
+}
+
+.testimonials-rating {
+  margin-bottom: 3.6rem;
+}
+
+.testimonials-text {
+  margin-bottom: 3.6rem;
+}
+
+.testimonial {
+  max-width: 70%;
+}
+
+.user-profile {
+  display: flex;
+  align-items: center;
+  gap: 5.2rem;
+}
+
+.users-names {
+  font-size: 2rem;
+}
+
+/***** CTA SECTION  *****/
+
+.cta-section {
+  background-image: url("./img/cta_Image.png");
+  background-size: cover;
+  color: #fff;
+  height: 54rem;
+  margin-top: 20rem;
+  padding: 12rem 26.8rem;
+  margin-bottom: 0;
+}
+
+.cta-content {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.cta-content p {
+  margin-bottom: 3rem;
+}
+
+.cta-p {
+  display: block;
+}
+
+.form-container {
+  width: 100%;
+}
+
+/*** FOOTER SECTION ***/
+
+.footer-section {
+  background-color: #eca2a1;
+}
+
+.footer-container {
+  width: 95%;
+  margin: 0 auto;
+  padding: 5rem;
+}
+
+.about,
+.company,
+.support,
+.get-in-touch {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.eatey {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.footer-heading {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.social-media-container {
+  display: flex;
+  gap: 2.5rem;
+}
+
+.social-media {
+  font-size: 3rem;
+}
+
+.footer-section li {
+  list-style: none;
+  margin-bottom: 2rem;
+}
+
+.footer-section a:link,
+.footer-section a:visited {
+  text-decoration: none;
+  color: #000;
+}
+
+/*******/
+.signup-modal {
+  background: #fff;
+  background-size: cover;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40%;
+  padding: 6rem;
+  border-radius: 5px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+
+.close {
+  position: absolute;
+  top: 1.2rem;
+  right: 2rem;
+  font-size: 5rem;
+  color: #000;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(1px);
+}
+
+.hidden {
+  display: none;
+}
+
+input {
+  width: 40ch;
+  display: block;
+  padding: 1rem;
+  border: 2px solid #777;
+  border-radius: 0.6rem;
+}
+
+.data {
+  margin-bottom: 2rem;
+}
+
+.submit-btn {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.submit-btn:hover {
+  background-color: #222;
+}
+
+.signin-modal {
+  background: #fff;
+  background-size: cover;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40%;
+  padding: 6rem;
+  border-radius: 5px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+
+.close--sign-in {
+  position: absolute;
+  top: 1.2rem;
+  right: 2rem;
+  font-size: 5rem;
+  color: #000;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.overlay--sign-in {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(1px);
+}
